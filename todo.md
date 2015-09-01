@@ -14,8 +14,12 @@
 1. Take quiz again button
 1. Organize how paragraph data is presented for each hike
 1. Make  map more interactive:
-  -display location name with some info on tag
-  -have user be able to enter their address to see travel time
+  *display location name with some info on tag
+  *have user be able to enter their address to see travel time
+1. pull all hikes from database and plot on map
+  *click on point and go to full hike page info, or can type in directions to see how far
+  *have this be main page feature and quiz later on, "not sure where you want to go, take the questionnaire to find out!"
+1. make a component where back end user/ system admin can add a camp spot or hike and then have front end user see it plotted on a map and click it for more info
 
 ##Questions:
 1. Use API (but from where???) or make my own database?
@@ -31,4 +35,9 @@
 *for logic, true/false, number range, to filter more dynamically?
 
 *distance: calculate distance from starting point to all hikes, if less than a certain distance, will be in <2 hr filter...
+
+
+##Notes
+*data visualization?,
+  *of all hikes in co, add to 'cart' and compare
 
