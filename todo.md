@@ -1,6 +1,12 @@
 ##TO DO:
 
 ###Refactor:
+1. Refactor to client/server side, add database
+1. advance logic to include more hikes and quiz questions
+1. scrape data/ use trail API
+
+
+
 1. Add more logic to account for additional hike options
 1. Add database with Mongo
 1. Set server side so can host on heroku
@@ -25,3 +31,4 @@
 *for logic, true/false, number range, to filter more dynamically?
 
 *distance: calculate distance from starting point to all hikes, if less than a certain distance, will be in <2 hr filter...
+
