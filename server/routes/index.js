@@ -13,6 +13,13 @@ router.get('/hikes', function(req, res, next) {
 
 router.get('/hikes', function(req, res, next) {
   //get data from database
+  //get hikes
+});
+
+router.get('/quiz', function(req, res, next) {
+  //get data from database
+  //get questions
+  //get quiz
 });
 
 router.post('/hikes', function(req, res){
