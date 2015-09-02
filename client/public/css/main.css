@@ -1,8 +1,111 @@
-body {
+/*body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}*/
+
+/*Styling*/
+
+/*TO DO: btns, font, section colors*/
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.next {
+  display: none;
+}
+
+.again {
+  display: none;
+}
+
+#map {
+  width: 50%;
+  height: 45em;
+  background-color: #CCC;
+}
+
+.jumbotron {
+  position: relative;
+  height: 100%;
+  width:100%;
+  background: url("/img/jumbotron.jpg") no-repeat center center;
+  background-size: 100% 100%;
+  margin-bottom: 0px;
+}
+
+.main {
+  margin-top: -35px;
+}
+
+h3 {
+  margin: 25px;
+}
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height (normally) */
+  margin-bottom: -1px;
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.footer, .page-wrap:after {
+  height: 142px;
+}
+.footer {
+  padding: 50px;
+  background: #DDDDDD;
+  width: 100%;
+}
+
+.logos {
+  width: 50px;
+  height: 50px;
+}
+
+.question-style {
+  font-size: 22px;
+  margin-top: 200px;
+  margin-bottom: 30px;
+}
+
+/*.results-style {
+  position: absolute;
+  margin-top:
+}
+*/
+/*.btn {
+  background-color: #fff;
+  color: #0F0F0F;
+}
+*/
+.ghost-button-transition {
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #0F0F0F;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+}
+.ghost-button-transition:hover,
+.ghost-button-transition:active {
+  background-color: #12095A;
+  color: #fff;
+  transition: background-color 0.3s ease-in,
+              color 0.3s ease-in;
 }

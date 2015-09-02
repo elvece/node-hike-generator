@@ -20,7 +20,6 @@ var hikeSchema = new Schema(
   }
 );
 
-
 ////////////////////
 //QUESTION SCHEMA//
 //////////////////
@@ -44,8 +43,5 @@ module.exports = {
   Hike: Hike,
   Question: Question
 };
-
-// var question1 = new MakeQuizItem(1, "How long are you interested in hiking for?", ["A few hours", "Half-day", "Full-day"]);
-// var question2 = new MakeQuizItem(2, "What is your experience level?", ["Beginner", "Intermediate", "Advanced"]);
 
 
