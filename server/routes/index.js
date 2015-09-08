@@ -9,9 +9,6 @@ router.get('/', function(req, res, next) {
 
 router.get('/hikes', function(req, res, next) {
   res.render('hikes', { title: 'All Hikes' });
-});
-
-router.get('/hikes', function(req, res, next) {
   //get data from database
   //get hikes
 });

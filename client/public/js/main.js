@@ -1,11 +1,13 @@
 //JS OOP file - data constructors, instances, and methods
 
-//globals
+// *** global variables *** //
+
 // var totalQuestions = quizArr.length;
-var questionCounter = 0;
-var quizArr = [];
-var selections = [];
+// var questionCounter = 0;
+// var selections = [];
 var hikeArr = [];
+var quizArr = [];
+
 
 //quiz constructor
 function MakeQuizItem(uuid, question, options){
@@ -66,11 +68,9 @@ MakeHikeItem.prototype.toString = function() {
 MakeHikeItem.prototype.render = function() {
   var results = $('#results');
   this.$element = results
-    .append('<h2>Your suggested hike is:</h2><h3>'
-      +this.name+
-      '</h3><br>')
+    .append('<h2>Your suggested hike is:</h2><h3>'+ this.name +'</h3><br>')
     .append('<div class="row"><div class="col-md-4 col-md-offset-2"><a href="#" class="thumbnail"><img src='+this.img+'></a><div class="row text-center"><div class="col-md-12"><ul class="list-group"><li class="list-group-item"><strong>Location: </strong>'+this.location+'</li><li class="list-group-item"><strong>Distance: </strong>'+this.distance+' miles</li><li class="list-group-item"><strong>Duration: </strong>'+this.duration+' hours</li><li class="list-group-item"><strong>Difficulty: </strong>'+this.toString()+'</li><li class="list-group-item"><strong>Features: </strong>'+this.feature+'</li></ul></div></div></div><div class="col-md-4"><p>'+this.info+'</p></div></div>')
-    .append('<div class="row"><div class="col-md-6 col-md-offset-3" id="map">'+this.map+'</div></div>');
+    .append('<div class="row map-box"><div class="col-md-6 col-md-offset-3" id="map">'+this.map+'</div></div>');
 };
 
 // hike1.render();

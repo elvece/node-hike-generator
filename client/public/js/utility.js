@@ -1,5 +1,26 @@
 //JS Utility file - helper functions
 
+//gets the value of the checked user selection and pushes the value to selections array
+function getSelection() {
+  selections[questionCounter] = $('input[name="option"]:checked').val();
+}
+
+//shows next button on user input and get hike results button if last question
+function showButtons(){
+  //if number is questions is the length of the quiz array, change the text of the next button
+  if (questionCounter === quizArr.length){
+    $next.hide();
+    $results.show();
+  } else {
+    //when the radio button is clicked, if option is selected, show next button
+    $('input[type="radio"]').click(function() {
+      if($('input[name="option"]:checked').length === 1) {
+        $next.show();
+      }
+    });
+  }
+}
+
 //create question on DOM using index from quiz array
 function createQuestion (index){//change name to renderQuestion***
   quizArr[index].render();
@@ -49,7 +70,7 @@ function getResults(){
     }
 }
 
-
+//gets the hike information from hike array based on user result
 function getHikeInfo(num){
   for (var i = 0; i < hikeArr.length; i++) {
     if (hikeArr[i].uuid === parseInt(num)){
@@ -76,3 +97,6 @@ function initialize() {
     map: map,
     title: results.name  });
 }
+
+
+
