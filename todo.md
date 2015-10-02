@@ -4,9 +4,7 @@
 1. Refactor to client/server side, add database
 1. advance logic to include more hikes and quiz questions
 1. scrape data/ use trail API
-
-
-
+----------------------------------------------------------
 1. Add more logic to account for additional hike options
 1. Add database with Mongo
 1. Set server side so can host on heroku
@@ -20,8 +18,19 @@
   *click on point and go to full hike page info, or can type in directions to see how far
   *have this be main page feature and quiz later on, "not sure where you want to go, take the questionnaire to find out!"
 1. make a component where back end user/ system admin can add a camp spot or hike and then have front end user see it plotted on a map and click it for more info
+----------------------------------------------------------
 
-##Questions:
+###Angularize:
+1. Work on SPA for displaying all hikes
+1. For each hike, drop down show divs of each hike feature
+1. Pull in weather API and ratings API(?scrape from pro trails?)
+1. Map of location with option to get directions to (stretch: login in gmail to save this hike)
+1.
+
+###Login:
+* To save hikes interested in and custom directions to each hike
+
+###Questions:
 1. Use API (but from where???) or make my own database?
 1. How to tie hikes to area?
   -proximity by certain number of miles?
@@ -37,7 +46,7 @@
 *distance: calculate distance from starting point to all hikes, if less than a certain distance, will be in <2 hr filter...
 
 
-##Notes
+###Notes
 *data visualization?,
   *of all hikes in co, add to 'cart' and compare
 
