@@ -19,6 +19,7 @@
   *have this be main page feature and quiz later on, "not sure where you want to go, take the questionnaire to find out!"
 1. make a component where back end user/ system admin can add a camp spot or hike and then have front end user see it plotted on a map and click it for more info
 ----------------------------------------------------------
+1. FOR LOGIC: dynamic questionaire that uses if statements to filter questions based on those questions possible answers
 
 ###Angularize:
 1. Work on SPA for displaying all hikes
