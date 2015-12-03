@@ -36,7 +36,7 @@ var Hike = mongoose.model('hike', hikeSchema);
 var Question = mongoose.model('question', questionSchema);
 
 //connect to db
-mongoose.connect('mongodb://localhost/hike-generator');
+mongoose.connect('mongodb://localhost/the-trail');
 
 //export for use in other files
 module.exports = {

@@ -1,7 +1,7 @@
 // *** main dependencies *** //
 
 // mongoose config
-require('./database');
+require('./models/database');
 
 var express = require('express');
 var path = require('path');
@@ -13,7 +13,7 @@ var swig = require('swig');
 var methodOverride = require('method-override');
 
 // seed the database
-var seedDatabase = require('./seed');
+var seedDatabase = require('./models/seed');
 seedDatabase();
 
 

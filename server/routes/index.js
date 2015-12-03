@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
-var schema = require('../database');
+var schema = require('../models/database');
 
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Hike Generator' });

@@ -22,10 +22,7 @@ function seedDatabase() {
           map: [39.0708, -106.9890],
           info: "Information"
         }
-      );
-
-      //save hike in db
-      hike_1.save(function(err) {
+      ).save(function(err) {
         if (err) throw err;
         console.log('Hike saved successfully!');
       });
